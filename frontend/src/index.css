@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 1. Global Styles */
+body {
+  /* This uses the color we just defined in tailwind.config.js */
+  @apply bg-stream-dark text-white; 
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll on the body */
+}
+
+/* 2. Utility to hide scrollbars (Chrome/Safari/Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* 3. Utility to hide scrollbars (Firefox/IE/Edge) */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
