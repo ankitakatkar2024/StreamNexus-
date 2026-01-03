@@ -1,4 +1,5 @@
-const API_URL = "http://127.0.0.1:8000";
+// ✅ Render Backend URL (PRODUCTION)
+const API_URL = "https://streamnexus-backend.onrender.com";
 
 export const getMovies = async (genre, exclude) => {
   let url = `${API_URL}/movies?limit=50`;
